@@ -1,0 +1,68 @@
+html{
+	margin: 0;
+	padding: 0;
+	background-color: black;
+}
+p {
+	font-size: 24px;
+	color: white;
+	margin-top: 1%;
+}
+.animated {
+	animation-duration: 1s;
+}
+/*Formatting the controls*/
+.simonBtn{
+	margin-top: 3%;
+}
+
+column{
+	text-align: center;
+
+}
+i {
+	font-size: 86px;
+	cursor: pointer;
+}
+.column > div, #turnCounter {
+	color: #bdbdbd;
+	font-size: 24px;
+}
+.column > div{
+	margin-top: 10%;
+}
+
+.settings{
+	text-align: center;
+	margin: auto;
+	margin-top: 3%;
+} 
+.button{
+	margin-right: 2%;
+	margin-left: 2%;
+}
+.is-inverted{
+	border-color: white;
+	background-color: black;
+	color: white;
+}
+/*Coloring each button*/
+#blue{
+	color: #21007FFF;
+}
+#red{
+	color: #B40000FF;
+}
+#orange{
+	color: #D96A00FF;
+}
+#green{
+	color: #267F00FF;
+}
+#purple{
+	color: #7F006EFF;
+}
+#yellow{
+	color: #FFD800FF;
+}
+

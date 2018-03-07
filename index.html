@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Simon's Game</title>
+	<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+  	<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+ 	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<p class="is-dark has-text-centered">Simon's Game</p>
+	<div class="simonBtn">
+		<div class="columns is-gapless has-text-centered is-centered is-mobile">
+
+		<div id="blue" class="column is-3 animated bounceInLeft simon"><i class="ion-android-radio-button-on"></i></div>
+		<div id="red" class="column is-3 animated bounceInRight simon"><i class="ion-android-radio-button-on"></i></div>
+
+		</div>
+		<div class="columns is-gapless has-text-centered is-centered is-mobile">
+
+		<div id="yellow" class="column is-4 animated bounceInLeft simon"><i class="ion-android-radio-button-on"></i></div>
+		<div class="column is-1 animated bounceIn"><div>Round</div><span id="turnCounter">1</span></div>
+		<div id="purple" class="column is-4 animated bounceInRight simon"><i class="ion-android-radio-button-on"></i></div>
+
+		</div>
+		<div class="columns is-gapless has-text-centered is-centered is-mobile">
+
+		<div id="green" class="column is-3 animated bounceInLeft simon"><i class="ion-android-radio-button-on"></i></div>
+		<div id="orange" class="animated bounceInRight simon column is-3"><i class="ion-android-radio-button-on"></i></div>
+
+		</div>
+	</div>
+		<div class="settings">
+			<button class="button is-inverted" id="reset">Reset</button>
+			<button class="button is-warning" id="hard">Strict</button>
+		</div>
+</body>
+	<audio data-key="blue" src="https://dl.dropbox.com/s/vgh52byhmbpyu1z/blue.wav"></audio>
+	<audio data-key="green" src="https://dl.dropbox.com/s/h2cuna68u0kn9k2/green.wav"></audio>
+	<audio data-key="red" src="https://dl.dropbox.com/s/l7fyszlg59h0y5k/red.wav"></audio>
+	<audio data-key="yellow" src="https://dl.dropbox.com/s/fe7z4oy0kbeyfb6/yellow.wav"></audio>
+	<audio data-key="purple" src="https://dl.dropbox.com/s/7ohg6ly6ligu6wk/purple.wav"></audio>
+	<audio data-key="orange" src="https://dl.dropbox.com/s/re19lqj2g05u9kh/orange.wav"></audio>
+ 	<script src="script.js"></script>
+</html>
