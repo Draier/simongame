@@ -30,7 +30,9 @@ function play(e){
   		playerC++;
   		if(playerC == turnC){
   			turnC++;
-  			counter.innerHTML = turnC;
+			if(turnC < 20)
+  				counter.innerHTML = turnC;
+			
   			simonSays(turnC, true);
   		}
   	}
@@ -65,6 +67,7 @@ function simonSays(n , next){
 	playerC = 0;
 	if(n > 20){
 		alert('Congratulations, you won!!!');
+		reset();
 	}
 	else if(next == true){
 		if(turnC > 1){
@@ -102,7 +105,7 @@ function strictMode(e){
 	}
 }
 
-function reset(e){
+function reset(){
 	turnC = 1;
 	playerC = 0;
 	i = 0;
